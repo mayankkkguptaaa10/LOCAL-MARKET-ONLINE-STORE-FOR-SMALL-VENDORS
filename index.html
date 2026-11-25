@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Market</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <div id="topbar">
+        Support your local shops - Shop Local, Shop Smart!
+    </div>
+
+    <!-- Header -->
+
+    <div id="header">
+        <h1>Local Market 🛍️</h1>
+
+        <input type="search" id="search"
+               placeholder="Search products...">
+
+        <button onclick="searchProduct()">Search</button>
+
+        <a href="login.html">Login</a>
+
+        <a href="cart.html">
+            🛒 Cart (<span id="count">0</span>)
+        </a>
+    </div>
+
+    <!-- Navigation -->
+
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+    </div>
+
+    <!-- Welcome Section -->
+
+    <div id="welcome">
+        <h1>Welcome to Local Market</h1>
+
+        <p>Buy your daily essentials from local shops at affordable prices.</p>
+
+        <a href="#products">Explore Products</a>
+    </div>
+
+    <!-- Categories -->
+
+    <h2 id="categories">Shop by Category</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="category">
+                    <h1>🍎</h1>
+                    <p>Fruits</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="category">
+                    <h1>🛒</h1>
+                    <p>Groceries</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="category">
+                    <h1>👕</h1>
+                    <p>Fashion</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="category">
+                    <h1>🎧</h1>
+                    <p>Electronics</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Products -->
+
+    <h2 id="products">Popular Products</h2>
+
+    <p id="message"></p>
+
+    <table>
+
+        <!-- First Row -->
+
+        <tr>
+            <td>
+                <div class="product">
+                    <div class="image">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <p class="shop">Green Basket Store</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹149</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+
+            <td>
+                <div class="product">
+                    <div class="image">🥛</div>
+                    <h3>Fresh Milk</h3>
+                    <p class="shop">Daily Dairy Shop</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹65</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+
+            <td>
+                <div class="product">
+                    <div class="image">🍞</div>
+                    <h3>Wheat Bread</h3>
+                    <p class="shop">City Bakery</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹45</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+
+            <td>
+                <div class="product">
+                    <div class="image">👕</div>
+                    <h3>Cotton T-Shirt</h3>
+                    <p class="shop">Style Corner</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹299</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Second Row -->
+
+        <tr>
+            <td>
+                <div class="product">
+                    <div class="image">🍌</div>
+                    <h3>Bananas</h3>
+                    <p class="shop">Fresh Farm Shop</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹60</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+
+            <td>
+                <div class="product">
+                    <div class="image">🎧</div>
+                    <h3>Wireless Earphones</h3>
+                    <p class="shop">Tech Local</p>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹799</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+
+            <td>
+                <div class="product">
+                    <div class="image">🍚</div>
+                    <h3>Rice (5 kg)</h3>
+                    <p class="shop">Family Grocery Store</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹350</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+
+            <td>
+                <div class="product">
+                    <div class="image">🪴</div>
+                    <h3>Indoor Plant</h3>
+                    <p class="shop">Green Home Shop</p>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹199</p>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- About Us -->
+
+    <div id="about">
+        <h2>About Us</h2>
+        <p>Local Market connects customers with local shops.</p>
+        <p>Our aim is to make shopping easy and affordable.</p>
+    </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <h3>Local Market</h3>
+        <p>Shop Local, Shop Smart</p>
+        <p>© 2026 Local Market. All Rights Reserved.</p>
+    </div>
+
+    <!-- JavaScript Link -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
